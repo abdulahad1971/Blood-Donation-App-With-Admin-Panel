@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="হোম"
+        android:icon="@drawable/baseline_home_24"/>
+
+
+    <item
+        android:id="@+id/donor"
+        android:title="ডোনার"
+        android:icon="@drawable/health"/>
+
+    <item
+        android:id="@+id/favourite"
+        android:title="সংরক্ষণ"
+        android:icon="@drawable/heart"/>
+
+    <item
+        android:id="@+id/person"
+        android:title="প্রোফাইল"
+        android:icon="@drawable/profile"/>
+
+</menu>

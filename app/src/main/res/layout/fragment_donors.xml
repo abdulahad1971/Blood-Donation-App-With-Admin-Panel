@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/donorFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/white">
+
+        <SearchView
+            android:padding="5dp"
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="রক্তদাতার নাম, জেলা বা গ্রুপ লিখুন..."
+            android:iconifiedByDefault="false"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textColorHint="#888888"
+            app:iconifiedByDefault="false"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- মূল Layout হিসেবে SwipeRefreshLayout ইউজ করা হয়েছে -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ভেতরে LinearLayout থাকবে, যাতে অন্যান্য উপাদান থাকলে তা রাখা যায় -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/red"
+                 />
+
+            <!-- RecyclerView যেটা রিফ্রেশ হবে -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDonors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>

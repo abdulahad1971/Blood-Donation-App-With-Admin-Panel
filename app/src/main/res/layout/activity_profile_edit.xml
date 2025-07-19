@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.ProfileEdit">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/hind"
+            android:text="প্রোফাইল আপডেট"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edit_icon_bg"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_edit_24"
+                    app:tint="@color/black" />
+            </FrameLayout>
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/editName"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_account_circle_24"
+                android:hint="নাম"
+                android:fontFamily="@font/hind"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/editPhone"
+                android:fontFamily="@font/hind"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/baseline_phone_android_24"
+                android:layout_height="wrap_content"
+                android:hint="মোবাইল নম্বর"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:enabled="false"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Blood Group Spinner Design -->
+            <Spinner
+                android:id="@+id/spinnerBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:padding="15dp"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:padding="15dp"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:fontFamily="@font/hind" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="ঠিকানা"
+                android:drawableLeft="@drawable/baseline_home_24"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/hind"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Donor Checkbox -->
+            <CheckBox
+                android:id="@+id/checkDonor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আমি একজন রক্তদাতা"
+                android:textSize="16sp"
+                android:fontFamily="@font/hind"
+                android:layout_marginTop="12dp" />
+
+            <!-- Signup Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আপডেট"
+                android:textSize="18sp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/hind"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/red"
+                android:textColor="#fff"
+                android:padding="12dp" />
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

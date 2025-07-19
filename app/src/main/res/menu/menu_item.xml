@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 📌 গ্রুপ: নেভিগেশন -->
+    <group android:id="@+id/group_navigation">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="হোম" />
+    </group>
+
+    <!-- 📌 গ্রুপ: সোশ্যাল মিডিয়া -->
+    <group android:id="@+id/group_social">
+        <item
+            android:id="@+id/facebook_page"
+            android:icon="@drawable/facebook"
+            android:title="ফেসবুক পেজ" />
+
+        <item
+            android:id="@+id/facebook_group"
+            android:icon="@drawable/facebook"
+            android:title="ফেসবুক গ্রুপ" />
+
+        <item
+            android:id="@+id/youtube"
+            android:icon="@drawable/youtube"
+            android:iconTint="@color/black"
+            android:title="ইউটিউব চ্যানেল" />
+
+        <item
+            android:id="@+id/developer"
+            android:icon="@drawable/profile"
+            android:title="ডেভেলপার তথ্য" />
+    </group>
+
+    <!-- 📌 গ্রুপ: অন্যান্য -->
+    <group android:id="@+id/group_others">
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/baseline_share_24"
+            android:iconTint="@color/black"
+            android:title="শেয়ার করুন" />
+
+        <item
+            android:id="@+id/star"
+            android:icon="@drawable/baseline_star_rate_24"
+            android:iconTint="@color/black"
+            android:title="রেটিং দিন" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:iconTint="@color/black"
+            android:title="বাহির" />
+    </group>
+
+</menu>

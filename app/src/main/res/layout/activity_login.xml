@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.Login">
+
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/shape7"
+        app:tint="@color/red" />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:padding="16dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/blood_logo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/red" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind"
+                android:text="লগইন করুন"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/editPhone"
+                android:fontFamily="@font/hind"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/baseline_phone_android_24"
+                android:layout_height="wrap_content"
+                android:hint="মোবাইল নম্বর"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="পাসওয়ার্ড"
+                android:drawableLeft="@drawable/baseline_lock_open_24"
+                android:inputType="textPassword"
+                android:fontFamily="@font/hind"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg" />
+
+
+
+
+
+
+
+
+
+
+            <!-- Signup Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="লগইন"
+                android:textSize="18sp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/hind"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/red"
+                android:textColor="#fff"
+                android:padding="12dp" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind"
+                    android:text="একাউন্ট নেই?"
+                    android:textSize="16dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/signUp_btn"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind"
+                    android:text="সাইনআপ করুন"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/red" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

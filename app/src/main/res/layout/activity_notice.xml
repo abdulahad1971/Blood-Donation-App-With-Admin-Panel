@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.screen.Notice">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/hind"
+            android:text="নোটিশ যোগ করুন"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/editMarqueeText"
+            android:hint="নতুন স্ক্রল টেক্সট লিখুন..."
+            android:layout_width="match_parent"
+            android:fontFamily="@font/hind"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:gravity="top|start"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnSubmitText"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hind"
+            android:text="সাবমিট করুন"
+           android:background="@drawable/btn_bg"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMarquee"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:fontFamily="@font/hind"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

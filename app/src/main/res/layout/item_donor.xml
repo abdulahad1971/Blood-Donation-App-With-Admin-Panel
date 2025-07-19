@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/user"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Info Section -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="নাম: "
+                android:textColor="#222222"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/hind" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ফোন: "
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:fontFamily="@font/hind" />
+
+            <TextView
+                android:id="@+id/txtBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="রক্ত গ্রুপ: "
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:fontFamily="@font/hind" />
+
+            <TextView
+                android:id="@+id/txtDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="জেলা: "
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:fontFamily="@font/hind" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ঠিকানা: "
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:fontFamily="@font/hind" />
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="8dp">
+
+            <ImageView
+                android:id="@+id/btnCall"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                android:src="@drawable/phone"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Call"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:id="@+id/btnFavorite"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                android:src="@drawable/heart"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Favorite" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

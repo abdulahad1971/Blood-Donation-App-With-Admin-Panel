@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".screen.SignUp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/shape7"
+        app:tint="@color/red" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:text="সাইন আপ করুন"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#000000" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top">
+
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/editName"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_account_circle_24"
+                android:hint="নাম"
+               android:fontFamily="@font/hind"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/editPhone"
+                android:fontFamily="@font/hind"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/baseline_phone_android_24"
+                android:layout_height="wrap_content"
+                android:hint="মোবাইল নম্বর"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="পাসওয়ার্ড"
+                android:drawableLeft="@drawable/baseline_lock_open_24"
+                android:inputType="textPassword"
+                android:fontFamily="@font/hind"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg" />
+
+
+
+            <!-- Blood Group Spinner Design -->
+            <Spinner
+                android:id="@+id/spinnerBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:padding="15dp"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:padding="15dp"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:fontFamily="@font/hind" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="ঠিকানা"
+                android:drawableLeft="@drawable/baseline_home_24"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/hind"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg" />
+
+            <!-- Donor Checkbox -->
+            <CheckBox
+                android:id="@+id/checkDonor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আমি একজন রক্তদাতা"
+                android:textSize="16sp"
+                android:fontFamily="@font/hind"
+                android:layout_marginTop="12dp" />
+
+            <!-- Signup Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="সাইন আপ"
+                android:textSize="18sp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/hind"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/red"
+                android:textColor="#fff"
+                android:padding="12dp" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind"
+                    android:text="একাউন্ট আছে?"
+                    android:textSize="16dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/login_btn"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind"
+                    android:text="লগইন করুন"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/red" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

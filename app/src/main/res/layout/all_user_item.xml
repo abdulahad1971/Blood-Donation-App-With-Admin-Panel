@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageProfile"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textName"
+                android:textStyle="bold"
+                android:fontFamily="@font/hind"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="নাম:" />
+
+            <TextView
+                android:id="@+id/textBloodGroup"
+                android:textColor="#FF0000"
+                android:fontFamily="@font/hind"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="রক্ত গ্রুপ:" />
+
+            <TextView
+                android:id="@+id/textDistrict"
+                android:textSize="14sp"
+                android:fontFamily="@font/hind"
+                android:textColor="#444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="জেলা:" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind"
+                android:text="ফোন:"
+                android:textColor="#444"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:textSize="14sp"
+                android:fontFamily="@font/hind"
+                android:textColor="#444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ঠিকানা:" />
+
+            <TextView
+                android:id="@+id/textDonorStatus"
+                android:textSize="14sp"
+                android:textColor="#006400"
+                android:fontFamily="@font/hind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="রক্তদাতা:" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_delete_24"
+            android:contentDescription="Delete"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

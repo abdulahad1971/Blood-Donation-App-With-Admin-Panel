@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20sp"
+    app:cardElevation="4dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:background="@drawable/card_background"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <!-- Top Section: Text Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:fontFamily="@font/hind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="নাম: জন ডো"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtGroup"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/hind"
+
+                    android:layout_height="wrap_content"
+                    android:text="রক্তের গ্রুপ: A+" />
+
+                <TextView
+                    android:id="@+id/txtDistrict"
+                    android:fontFamily="@font/hind"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জেলা: ঢাকা" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/hind"
+
+                    android:layout_height="wrap_content"
+                    android:text="ঠিকানা: মিরপুর" />
+
+                <TextView
+                    android:id="@+id/txtProblem"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/hind"
+
+                    android:layout_height="wrap_content"
+                    android:text="সমস্যা: জরুরী রক্ত প্রয়োজন" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:fontFamily="@font/hind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সময়: ২০২৫-০৭-০৪ ১২:০০" />
+            </LinearLayout>
+
+            <!-- Call Icon -->
+            <ImageView
+                android:id="@+id/callIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/phone"
+                android:contentDescription="Call"
+                android:padding="6dp"
+                />
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            app:riv_corner_radius="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hind"
+            android:text="ডিলিট"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="8dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

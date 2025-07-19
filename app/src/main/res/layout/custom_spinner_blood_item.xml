@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:padding="8dp">
+
+    <!-- Left icon -->
+    <ImageView
+        android:id="@+id/spinner_left_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/health" />
+
+    <!-- Spinner Text -->
+    <TextView
+        android:id="@+id/spinner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/hind"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/spinner_left_icon"
+        android:layout_toStartOf="@id/spinner_down_icon"
+        android:layout_centerHorizontal="true"
+        android:gravity="start"
+        android:text="Spinner Text"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- Right down arrow icon -->
+    <ImageView
+        android:id="@+id/spinner_down_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_arrow_drop_down_24" />
+
+</RelativeLayout>

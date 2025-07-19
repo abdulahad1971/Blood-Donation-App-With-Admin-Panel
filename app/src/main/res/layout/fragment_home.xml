@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.Home">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_auto_start="true"
+        app:shimmer_duration="2000">
+
+        <!-- Shimmer Placeholder Include -->
+        <include
+            layout="@layout/shimmer_home" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/text_marque_bg"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/notice_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/red"
+                    android:fontFamily="@font/hind"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="বিজ্ঞপ্তি"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textMarquee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/hind"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="3dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/screen2desc"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="1000"
+                        app:iss_period="1000"
+                        app:iss_text_align="CENTER" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/totalDonor"
+                android:text="রক্তদাতার তালিকা"
+                android:textStyle="bold"
+                android:fontFamily="@font/hind"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/red"
+                style="?android:attr/progressBarStyleLarge" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDonors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="রক্তের অনুরোধ"
+                android:id="@+id/totalDonorRequest"
+                android:textStyle="bold"
+                android:fontFamily="@font/hind"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/red"
+                style="?android:attr/progressBarStyleLarge" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:id="@+id/recyclerDonorsRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

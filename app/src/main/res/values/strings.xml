@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ব্লাড ডোনেশন অ্যাপস</string>
+    <string name="screen1">রক্তদান করুন</string>
+    <string name="screen2">রক্তদান করুন</string>
+    <string name="screen3">রক্তের অনুরোধ </string>
+    <string name="screen1desc">আপনার শরীরের একটি ব্যাগ রক্ত হয়তো কারো চোখে ফিরে আনতে পারে পৃথিবীর আলো। রক্তদান হোক আপনার অভ্যাস।</string>
+    <string name="screen2desc">রক্তদাতা মানেই জীবনদাতা। আপনি আজ যদি রক্ত দিয়ে কারো উপকারে আসতে পারেন, ভবিষ্যতে কেউ আপনারও উপকারে আসতে পারে।</string>
+    <string name="screen3desc">“রক্তদান করে আমি যে আনন্দ পাই, তা কোনো অর্থেই কেনা যায় না। এক ফোঁটা রক্তে একটি পরিবারকে হাসি ফিরিয়ে দেওয়ার সুযোগ পাই।”
+    </string>
+    <string name="startDesc"> “একটা কথা মনে রাখবেন, আপনার রক্ত কারো জীবনের শেষ আশা হতে পারে। তাই হাত বাড়ান, রক্তদানে এগিয়ে আসুন।”
+    </string>
+    <string name="a">প্রবেশ করুন</string>
+    <string name="b">ব্লাড ডোনেশন</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+
+
+    <string-array name="blood_groups">
+        <item>রক্তের গ্রুপ নির্বাচন করুন</item>
+        <item>O+</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O-</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </string-array>
+
+
+</resources>
